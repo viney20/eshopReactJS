@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+}
+.header_logo {
+  display: flex;
+}
+.mid {
+  display: flex;
+}
+.cart {
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  width: 10%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.header_search {
+  display: flex;
+}
+.menu {
+  display: flex;
+  column-gap: 20px;
+}
+.cartColor {
+  text-decoration: none;
+}

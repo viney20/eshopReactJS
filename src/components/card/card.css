@@ -1,0 +1,31 @@
+.carousel {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: inherit;
+}
+.img {
+  height: 100%;
+  width: 50%;
+}
+.nameOfProduct {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.title {
+  align-self: center;
+  font-weight: 500;
+}
+.subTitle {
+  align-self: center;
+  color: gainsboro;
+}
+.btn {
+  align-self: center;
+  margin-top: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
