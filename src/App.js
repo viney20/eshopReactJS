@@ -10,6 +10,7 @@ export const AppContex = createContext(null);
 function App() {
   const [dataapi, setdata] = useState();
   const [cart, setCart] = useState([]);
+
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())

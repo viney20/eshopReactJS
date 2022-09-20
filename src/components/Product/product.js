@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./product.css";
 import { AppContex } from "../../App";
 
 function Product(props) {
   const { setCart } = useContext(AppContex);
-
+  const [btntext, setbtntext] = useState("Add to cart");
   function handleClick() {
+    setbtntext("✓ Added to cart");
     setCart((oldvalue) => [...oldvalue, props.data]);
   }
   return (
@@ -20,7 +21,7 @@ function Product(props) {
           {props.data.price}
         </span>
         <button className="btn" onClick={handleClick}>
-          Add to cart
+          {btntext}
         </button>
       </div>
     </div>

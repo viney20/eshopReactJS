@@ -2,16 +2,27 @@ import React, { useContext } from "react";
 import { AppContex } from "../../App";
 import CartItem from "./cartitem";
 function Checkout() {
-  const { cart } = useContext(AppContex);
+  const { cart, setCart } = useContext(AppContex);
   console.log(cart.length);
 
   let result = cart.reduce((acc, obj) => acc + obj.price, 0);
+
+  function handleAllRemove() {
+    setCart([]);
+  }
+
   return (
     <div className="checkoutContainer">
-      <h1>Shopping Cart</h1>
-      {cart.map((item) => (
-        <CartItem payload={item} key={item.id} />
-      ))}
+      <div className="label">
+        <h1>Shopping Cart</h1>
+        <span onClick={handleAllRemove}>Remove all</span>
+      </div>
+
+      <div className="cartitems">
+        {cart.map((item) => (
+          <CartItem payload={item} key={item.id} />
+        ))}
+      </div>
       <div className="billSection">
         <div className="totalbillSection">
           <div className="subTotal">
