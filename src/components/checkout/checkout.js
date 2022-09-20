@@ -16,7 +16,7 @@ function Checkout() {
         <div className="totalbillSection">
           <div className="subTotal">
             <span>SubTotal</span>
-            <span>{cart.length !== 0 && "$" + " " + result}</span>
+            <span>{cart.length !== 0 && `"$" ${result}`}</span>
           </div>
           <div className="deliveryChargeSection">
             <span>Estimate delivery </span>

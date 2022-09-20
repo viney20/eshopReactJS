@@ -13,7 +13,5 @@ function card({ data, size }) {
     </div>
   );
 }
-{
-}
 
 export default card;

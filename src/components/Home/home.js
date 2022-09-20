@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./home.css";
 import Card from "../card/card";
 import redHoodie from "../../image/redHoodie.jpg";
